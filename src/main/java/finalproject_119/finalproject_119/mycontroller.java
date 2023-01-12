@@ -67,11 +67,11 @@ public class mycontroller {
             ObjectMapper map = new ObjectMapper();
             //membuat objek baru 
             Datamahasiswa data = new Datamahasiswa();
-            //meneruskan variabel json_receive dan objek kelas Barang. Metode ini memetakan JSON ke objek.
+            //meneruskan variabel json_receive dan objek kelas Datamahasiswa. Metode ini memetakan JSON ke objek.
             data = map.readValue(json_receive, Datamahasiswa.class);
             //membuat instance baru Barang menggunakan data yang diperoleh dari json_receive
             ctrl.create(data);
-            //memanggil metode create() pada objek ctrl yang telah ditentukan meneruskan instance Barang baru +memberikan pesan data tersimpan
+            //memanggil metode create() pada objek ctrl yang telah ditentukan meneruskan instance Datamahasiswa baru +memberikan pesan data tersimpan
             message = data.getName() + " Data tersimpan";
             //menangkap eror
         } catch (Exception e) {
