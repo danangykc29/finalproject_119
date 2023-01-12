@@ -28,6 +28,10 @@ public class DatamahasiswaJpaController implements Serializable {
     }
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("finalproject_119_finalproject_119_jar_0.0.1-SNAPSHOTPU");
 
+    DatamahasiswaJpaController() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
